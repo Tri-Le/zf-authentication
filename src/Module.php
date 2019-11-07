@@ -2,7 +2,7 @@
 namespace ZfAuthentication;
 
 class Module {
-	public function getConfig()
+	public function getConfig() {
 		return [];
 	}
 }
