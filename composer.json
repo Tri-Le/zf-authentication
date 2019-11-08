@@ -13,6 +13,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "zendframework/zend-authentication": "^2.6"
     }
 }
