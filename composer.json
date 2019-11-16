@@ -17,9 +17,6 @@
             "ZfAuthentication\\": "src/"
         }
     },
-    "bin": [
-        "bin/zf-authentication-prepare"
-    ],
     "require": {
         "php": ">=7.0",
         "zendframework/zend-form": "^2.9",
