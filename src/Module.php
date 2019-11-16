@@ -7,8 +7,7 @@ use Zend\Db\Adapter\Adapter;
 class Module {
 	public function getConfig() {
 		return [
-			'zf-authentication' => [
-				'storage' => '',
+			'zf_authentication' => [
 				'adapter' => [
 					'class' => CredentialTreatmentAdapter::class,
 					'db' => Adapter::class,
