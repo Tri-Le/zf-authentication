@@ -31,10 +31,10 @@ class AuthenticationServiceFactory implements FactoryInterface {
 		}
 
 		extract($default);
-		$tableName = null,
-        $identityColumn = null,
-        $credentialColumn = null,
-        $credentialTreatment = null
+		/*$tableName = null;
+        $identityColumn = null;
+        $credentialColumn = null;
+        $credentialTreatment = null;*/
 		$adapter = new $class($container->get($db), $table, $identity, $credential, $credential_treatment);
 		return new AuthenticationService(new Session('AuthSession'), $adapter);
 	}
