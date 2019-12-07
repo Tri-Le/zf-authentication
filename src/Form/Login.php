@@ -13,13 +13,13 @@ class Login extends Form {
 		parent::init();
 
 		$this->add([
-			'type' => 'email',
-			'name' => 'Email',
+			'type' => 'text',
+			'name' => 'Identity',
 			'options' => [
-				'label' => 'Email'
+				'label' => 'Identity'
 			],
 			'attributes' => [
-				'id' => 'email',
+				'id' => 'identity',
 				'maxlength' => 255,
 			]
 		])->add([
