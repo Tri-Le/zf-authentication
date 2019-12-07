@@ -42,19 +42,18 @@ class Login extends Form {
 			]
 		])->add([
 			'type' => 'submit',
-			'name' => 'LoginButton',
+			'name' => 'SubmitButton',
 			'attributes' => [
 				'value' => 'Login',
-				'id' => 'login-button'
+				'id' => 'submit-button'
 			]
 		])->getInputFilter()->add([
-			'name' => 'Email',
+			'name' => 'Identity',
 			'filters' => [
 				new StripTags(),
 				new StringTrim()
 			],
 			'validators' => [
-				new EmailAddress(),
 				new NotEmpty()
 			]
 		])->add([
