@@ -35,7 +35,7 @@ class AuthenticationServiceFactory implements FactoryInterface {
         $identityColumn = null;
         $credentialColumn = null;
         $credentialTreatment = null;*/
-		$adapter = new $class($container->get($db), $table, $identity, $credential, $credential_treatment);
+		$adapter = new $adapter($container->get($db), $table, $identity, $credential, $credential_treatment);
 		return new AuthenticationService(new Session('AuthSession'), $adapter);
 	}
 
